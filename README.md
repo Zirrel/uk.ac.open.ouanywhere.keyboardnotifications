@@ -1,2 +1,2 @@
-uk.ac.open.ouanywhere.keyboardnotifications
-===========================================
+ou-plugin-test
+==============

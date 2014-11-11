@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="uk.ac.open.ouanywhere.keyboardnotifications" version="1.0.0">
+    <name>KeyboardNotifications</name>
+    <description>KeyboardNotifications Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,keyboardnotifications</keywords>
+    <js-module src="www/keyboardnotifications.js" name="keyboardnotifications">
+        <clobbers target="keyboardnotifications" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="KeyboardNotifications">
+                <param name="ios-package" value="CDVKeyboardNotifications"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVKeyboardNotifications.h" />
+        <source-file src="src/ios/CDVKeyboardNotifications.m" />
+    </platform>
+</plugin>
