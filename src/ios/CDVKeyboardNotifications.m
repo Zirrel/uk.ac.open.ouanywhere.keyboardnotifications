@@ -12,6 +12,14 @@
     BOOL shouldPostNotification;
 }
 
+-(void)test:(CDVInvokedUrlCommand *)command {
+    callbackID = command.callbackId;
+    
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"KeyboardNotifications"];
+    
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
 -(void)registerForKeyboardNotifications:(CDVInvokedUrlCommand *)command {
     callbackID = command.callbackId;
     

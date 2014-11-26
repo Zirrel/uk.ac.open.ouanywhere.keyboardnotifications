@@ -8,5 +8,6 @@
 @interface CDVKeyboardNotifications : CDVPlugin
 
 -(void)registerForKeyboardNotifications:(CDVInvokedUrlCommand *)command;
+-(void)test:(CDVInvokedUrlCommand *)command;
 
 @end
