@@ -18,7 +18,7 @@
         <source-file src="src/ios/CDVKeyboardNotifications.m" />
     </platform>
     <platform name="android">
-        <config-file target="config.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="/*">
             <feature name="KeyboardNotifications">
                 <param name="android-package" value="uk.ac.open.ouanywhere.keyboardnotifications"/>
             </feature>
